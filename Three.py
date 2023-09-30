@@ -4,9 +4,11 @@ def main(page: ft.page):
     page.window_width = 500
     page.window_height = 850
     page.bgcolor = 'white'
+    
     #Current Week
     CurrentWeekdaySale = ft.TextField(label = " Current weekend day wise sale")
     CurrentNumberOfPple = ft.TextField(label = "Number of people received this weekend")
+    
     #Last Week
     LastWeekdaySale = ft.TextField(label = "Last weekend day wise sale")
     LastNumberPeople = ft.TextField(label = "Number of people who visited last week")
@@ -29,7 +31,7 @@ def main(page: ft.page):
         page.add(ft.Text(f"The Current Weekend's per person average sale is: {CurrentAverageSale}"))
 
     submit_button = ft.ElevatedButton(text = 'CurrentAverageSale')
-    submit_button2 = ft.ElevatedButton(text = 'LastAverageSaleAverageSale')
+    submit_button2 = ft.ElevatedButton(text = 'LastAverageSale')
 
     submit_button.on_click = Current
     submit_button2.on_click = Last
