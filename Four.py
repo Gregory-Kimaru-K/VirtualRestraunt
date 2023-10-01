@@ -2,7 +2,7 @@ import flet as ft
 
 def main(page: ft.page):
     page.window_width = 500
-    page.window_width = 850
+    page.window_height = 850
     page.bgcolor = "white"
 
     InvoiceNumber = ft.TextField(label = "InvoiceNumber")
